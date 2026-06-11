@@ -2,7 +2,16 @@
   "name": "caseflipper",
   "version": "1.0.0",
   "description": "A package that converts a string into different casing formats",
-  "keywords": ["caseflipper", "casing", "string manipulation" ],
+  "keywords": [
+    "caseflipper",
+    "casing",
+    "string manipulation"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  },
   "homepage": "https://github.com/khalidkhankakar/caseflipper",
   "bugs": {
     "url": "https://github.com/khalidkhankakar/caseflipper"
@@ -12,7 +21,14 @@
     "type": "git",
     "url": "git+https://github.com/khalidkhankakar/caseflipper.git"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3"
+  }
 }
