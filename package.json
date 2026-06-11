@@ -9,8 +9,11 @@
   ],
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "ci": "npm run build && npm run check-format && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "vitest",
+    "dev": "vitest"
   },
   "homepage": "https://github.com/khalidkhankakar/caseflipper",
   "bugs": {
@@ -29,6 +32,7 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.8.4",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
   }
 }
