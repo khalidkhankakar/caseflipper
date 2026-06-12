@@ -13,7 +13,9 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "test": "vitest",
-    "dev": "vitest"
+    "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "homepage": "https://github.com/khalidkhankakar/caseflipper",
   "bugs": {
@@ -38,6 +40,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "prettier": "^3.8.4",
     "typescript": "^6.0.3",
     "vitest": "^4.1.8"
